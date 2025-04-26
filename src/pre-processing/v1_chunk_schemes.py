@@ -9,8 +9,8 @@ from nltk.tokenize import sent_tokenize
 
 
 # === CONFIGURATION ===
-INPUT_FILE = 'cleaned_schemes_final.json'
-OUTPUT_FILE = 'chunked_schemes.json'
+INPUT_FILE = '../../data/4.clean_pre-process_data/cleaned_schemes_final.json'
+OUTPUT_FILE = '../../data/5.chunking/chunked_schemes.json'
 
 # Fields to chunk directly
 FIELDS_TO_CHUNK = [

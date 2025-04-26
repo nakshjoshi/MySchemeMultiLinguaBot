@@ -7,8 +7,8 @@ import chromadb
 from chromadb.config import Settings
 
 # Paths
-INPUT_JSON = 'hybrid_chunked_schemes.json'
-CHROMA_DB_DIR = 'chroma_db'
+INPUT_JSON = '../../data/5.chunking/hybrid_chunked_schemes.json'
+CHROMA_DB_DIR = '../../chroma_db'
 COLLECTION_NAME = 'government_schemes_chunks'
 
 # Load chunked data

@@ -2,7 +2,7 @@ import chromadb
 from sentence_transformers import SentenceTransformer
 
 # === CONFIGURATION ===
-CHROMA_DB_DIR = './chroma_db'
+CHROMA_DB_DIR = '../../chroma_db'
 COLLECTION_NAME = 'government_schemes_chunks'
 TOP_K = 15   # Fetch enough chunks to detect Top-2 schemes
 

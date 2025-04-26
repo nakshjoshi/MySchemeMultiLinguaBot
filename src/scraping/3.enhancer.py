@@ -8,8 +8,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 
 # === CONFIGURATION ===
-INPUT_FILE = 'cleaned_schemes3.json'
-OUTPUT_FILE = 'enhanced_schemes_final.json'
+INPUT_FILE = '../../data/2.useful_extracted/useful_data.json'
+OUTPUT_FILE = '../../data/3.enhancing_blank_data/enhanced_schemes.json'
 BASE_URL = "https://www.myscheme.gov.in/schemes/{}"
 
 fields_to_check = [

@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 # Load the enhanced schemes JSON
-input_path = Path("/mnt/data/enhanced_schemes_final.json")
+input_path = Path("../../data/3.enhancing_blank_data/enhanced_schemes.json")
 with open(input_path, "r", encoding="utf-8") as f:
     schemes = json.load(f)
 
@@ -37,7 +37,7 @@ for scheme in schemes:
             scheme[field] = "Not Available"
 
 # Save the cleaned data
-output_path = Path("/mnt/data/cleaned_schemes_final.json")
+output_path = Path("../../data/4.clean_pre-process_data/cleaned_schemes_final.json")
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(schemes, f, ensure_ascii=False, indent=2)
 

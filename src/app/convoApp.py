@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 
 # === CONFIGURATION ===
-CHROMA_DB_DIR = './chroma_db'
+CHROMA_DB_DIR = '../../chroma_db'
 COLLECTION_NAME = 'government_schemes_chunks'
 TOP_K = 15
 GEMINI_MODEL = "models/gemini-2.0-flash"

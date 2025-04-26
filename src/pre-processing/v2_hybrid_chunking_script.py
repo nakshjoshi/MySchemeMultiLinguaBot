@@ -9,8 +9,8 @@ from transformers import AutoTokenizer
 tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
 
 # Configuration
-INPUT_FILE = 'cleaned_schemes_final.json'
-OUTPUT_FILE = 'hybrid_chunked_schemes.json'
+INPUT_FILE = '../../data/4.clean_pre-process_data/cleaned_schemes_final.json'
+OUTPUT_FILE = '../../data/5.chunking/hybrid_chunked_schemes.json'
 
 SMALL_FIELDS = ["Scheme Name", "Ministry/Department", "Target Beneficiaries", "Tags", "Description"]
 MEDIUM_FIELDS = ["Benefits", "Eligibility Criteria", "Documents Required"]

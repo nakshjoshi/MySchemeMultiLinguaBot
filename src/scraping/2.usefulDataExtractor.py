@@ -1,10 +1,10 @@
 import json
 import pandas as pd
 
-# === CONFIGURATION ===
-INPUT_FILE = 'schemes_data.json'   # Replace this with your actual filename
-OUTPUT_JSON = 'cleaned_schemes3.json'
-OUTPUT_CSV = 'cleaned_schemes3.csv'
+INPUT_FILE = '../../data/1.raw/schemes_data.json'
+OUTPUT_JSON = '../../data/2.useful_extracted/useful_data.json'
+OUTPUT_CSV = '../../data/2.useful_extracted/useful_data.csv'
+
 
 # === LOAD DATA ===
 with open(INPUT_FILE, 'r', encoding='utf-8') as file:

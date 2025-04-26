@@ -15,7 +15,7 @@ for i in range(0, 3400, 100):
     response = requests.get(url, headers=headers)
     print(response.text)
     # save response as json file
-    with open(f"response{(i//100)+1}.json", "w", encoding="utf-8") as file:
+    with open(f"../../data/1.raw/response{(i//100)+1}.json", "w", encoding="utf-8") as file:
         file.write(response.text)
 
 # Set to store unique slugs
@@ -24,7 +24,7 @@ setofslags = set()
 for i in range(1, 35):
     try:
         # Construct the file path dynamically
-        file_path = f"response{i}.json"
+        file_path = f"../../data/1.raw/response{i}.json"
         
         # Check if file exists
         if not os.path.exists(file_path):
@@ -59,32 +59,32 @@ all_data = {}
 
 # def fetch_multiple_schemes(scheme_names, output_file="schemes_data.json"):
 #     base_url = "https://www.myscheme.gov.in/_next/data/Pgr1-v_XYCcKuy3LqoxeR/en/schemes/{}.json?slug={}"
-
+#
 #     headers = {
 #         "User-Agent": "Mozilla/5.0",
 #         "Accept": "application/json"
 #     }
-
+#
 #     for name in scheme_names:
 #         url = base_url.format(name, name)  # Format the URL for each scheme name
 #         try:
 #             response = requests.get(url, headers=headers)
 #             response.raise_for_status()  # Raise an exception for non-2xx responses
 #             data = response.json()
-
+#
 #             # Store data using scheme name as key
 #             all_data[name] = data
-
+#
 #             print(f"Fetched data for: {name}")  # Removed the Unicode checkmark here
 #         except requests.exceptions.RequestException as e:
 #             print(f"❌ Error fetching '{name}': {e}")
-
+#
 #     # Save combined data
 #     with open(output_file, "w", encoding="utf-8") as f:
 #         json.dump(all_data, f, indent=4, ensure_ascii=False)
 #     print(f"\n💾 Data saved to: {output_file}")
 
-def fetch_and_append_scheme_data(scheme_names, output_file="schemes_data.json"):
+def fetch_and_append_scheme_data(scheme_names, output_file="../../data/1.raw/schemes_data.json"):
     base_url = "https://www.myscheme.gov.in/_next/data/izZ63Jp_8jzqnemoxFmi0/en/schemes/{}.json?slug={}"
     headers = {
         "User-Agent": "Mozilla/5.0",
@@ -125,7 +125,7 @@ def fetch_and_append_scheme_data(scheme_names, output_file="schemes_data.json"):
             print(f"❌ Error fetching '{name}': {e}")
 
 # Example usage: read one file of slugs, then call the function
-with open("response1.json", "r", encoding="utf-8") as file:
+with open("../../data/1.raw/response1.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 slugs = set()
@@ -134,4 +134,4 @@ for item in data.get("data", {}).get("hits", {}).get("items", []):
     if slug:
         slugs.add(slug)
 
-fetch_and_append_scheme_data(setofslags, output_file="schemes_data.json")
+fetch_and_append_scheme_data(setofslags, output_file="../../data/1.raw/schemes_data.json")
