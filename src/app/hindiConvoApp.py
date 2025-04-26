@@ -10,7 +10,7 @@ CHROMA_DB_DIR = '../../chroma_db'
 COLLECTION_NAME = 'government_schemes_chunks'
 TOP_K = 15
 GEMINI_MODEL = "models/gemini-2.0-flash"
-API_KEY = "AIzaSyC-K1zRmfqjaW8vXsI6lSIODL2zZObFq14"
+API_KEY = ""
 
 CORE_FIELDS = {"Description"}
 LONG_FIELDS = {"Application Process", "Eligibility Criteria", "Documents Required", "Benefits"}
