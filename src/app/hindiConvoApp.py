@@ -4,6 +4,11 @@ from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 from deep_translator import GoogleTranslator
 from langdetect import detect
+import warnings
+st.set_page_config(page_title="IndiaGov Schemes Assistant", layout="wide")
+warnings.filterwarnings("ignore")
+
+
 
 # === CONFIGURATION ===
 CHROMA_DB_DIR = '../../chroma_db'
@@ -100,7 +105,6 @@ Based on this, answer the following question clearly and concisely:
     return response.text
 
 # === STREAMLIT UI ===
-st.set_page_config(page_title="IndiaGov Schemes Assistant", layout="wide")
 st.title("🇮🇳 Government Schemes Assistant")
 st.write("Ask about schemes, eligibility, benefits, or how to apply – chat style! (Supports Hindi 🇮🇳)")
 
