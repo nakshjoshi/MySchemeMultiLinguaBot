@@ -37,28 +37,6 @@ With thousands of government schemes spread across various ministries, citizens 
 - 🔹 **Simple UI** – Clean chat interface powered by Streamlit.
 - 🔹 **Custom Chunking Strategy** – Hybrid approach to handle verbose government data effectively.
 
----
-
-## 📂 Folder Structure
-
-\`\`\`
-MySchemeMultiLingualBot/
-├── chroma_db/              # Vector database storage
-├── data/                   # Raw and cleaned data files
-├── demo_notebook/          # Example notebooks for testing
-├── src/
-│   ├── app/                # Streamlit conversational apps
-│   │   ├── convoApp.py
-│   │   └── hindiConvoApp.py
-│   ├── pre-processing/     # Chunking and data cleaning scripts
-│   ├── scraping/           # Web scraping scripts
-│   └── vectordb/           # Vector DB setup and embedding scripts
-├── .gitignore
-├── folder_structure.txt
-├── gen_dir_tree.py         # Script to generate folder structure
-├── Report.md               # Detailed project report
-└── requirements.txt        # Python dependencies
-\`\`\`
 
 ---
 
