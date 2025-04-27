@@ -1,6 +1,14 @@
-streamlit
+beautifulsoup4
 chromadb
-sentence-transformers
-google-generativeai
 deep-translator
+google-generativeai
 langdetect
+nltk
+pandas
+requests
+selenium
+sentence-transformers
+streamlit
+tqdm
+transformers
+webdriver-manager
