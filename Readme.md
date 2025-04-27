@@ -109,8 +109,3 @@ http://localhost:8501
 
 ---
 
-## 📢 Note
-- Make sure your **ChromaDB** is initialized with embeddings before running the app.
-- For scraping or data updates, refer to the scripts under `/src/scraping` and `/src/pre-processing`.
-
----
