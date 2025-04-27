@@ -45,36 +45,36 @@ With thousands of government schemes spread across various ministries, citizens 
 Follow these steps to get the assistant up and running locally:
 
 ### 1️⃣ Clone the Repository
-\`\`\`bash
+```bash
 git clone https://github.com/your-username/MySchemeMultiLingualBot.git
 cd MySchemeMultiLingualBot
-\`\`\`
+```
 
 ### 2️⃣ Install Required Packages
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3️⃣ Navigate to the App Directory
-\`\`\`bash
+```bash
 cd src/app
-\`\`\`
+```
 
 ### 4️⃣ Run the Hindi Conversational App
-\`\`\`bash
+```bash
 python -m streamlit run hindiConvoApp.py
-\`\`\`
+```
 
 💡 For the English-only version, run:
-\`\`\`bash
+```bash
 python -m streamlit run convoApp.py
-\`\`\`
+```
 
 ### 5️⃣ Open in Browser
 Streamlit will provide a local URL, typically:
-\`\`\`
+```
 http://localhost:8501
-\`\`\`
+```
 
 ---
 
