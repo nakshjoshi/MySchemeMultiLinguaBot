@@ -1,11 +1,11 @@
 
-# 🇮🇳 MySchemeMultiLingualBot
+# MySchemeMultiLingualBot
 
 A **Conversational AI Assistant** to help citizens easily query Indian government schemes using a smart **Chunked Retrieval-Augmented Generation (CRAG)** pipeline. This assistant supports both **English** and **Hindi**, combining efficient vector search with LLM-powered responses.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 With thousands of government schemes spread across various ministries, citizens often struggle to find accurate and relevant information. This project solves that problem by:
 
@@ -16,7 +16,7 @@ With thousands of government schemes spread across various ministries, citizens 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python** – Core language
 - **ChromaDB** – Local vector database for efficient retrieval
@@ -29,7 +29,7 @@ With thousands of government schemes spread across various ministries, citizens 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - 🔹 **Multilingual Support** – Ask queries in **Hindi** or **English**.
 - 🔹 **Smart Retrieval** – Fetches only relevant chunks to stay within LLM token limits.
@@ -40,7 +40,7 @@ With thousands of government schemes spread across various ministries, citizens 
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 Follow these steps to get the assistant up and running locally:
 
@@ -78,7 +78,7 @@ http://localhost:8501
 
 ---
 
-## ⚡ Prerequisites
+## Prerequisites
 
 - **Python** 3.8+
 - **Google Gemini API Key**  
